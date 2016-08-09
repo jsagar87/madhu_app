@@ -1,3 +1,4 @@
+// login.component.ts
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9,21 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ng_semantic_1 = require("ng-semantic");
-var mock_post_1 = require('./mock-post');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.posts = mock_post_1.POSTS;
+var LoginComponent = (function () {
+    function LoginComponent() {
     }
-    AppComponent = __decorate([
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            directives: [ng_semantic_1.SEMANTIC_COMPONENTS, ng_semantic_1.SEMANTIC_DIRECTIVES],
-            templateUrl: 'app/app.component.html'
+            selector: "my-app",
+            templateUrl: "app/login.component.html",
+            styleUrls: ["app/login.css"],
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.LoginComponent = LoginComponent;
+//# sourceMappingURL=login.component.js.map
